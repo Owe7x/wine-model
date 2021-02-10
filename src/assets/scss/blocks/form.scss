@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.input {
+    display: inline-block;
+    width: 253px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    &:first-child{
+        margin-right: 28px;
+    }
+    &--long{
+        width: 538px;
+    }
+    &::placeholder {
+        color: $primary;
+    }
+}

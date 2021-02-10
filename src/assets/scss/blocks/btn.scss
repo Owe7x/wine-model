@@ -1,0 +1,21 @@
+
+.btn {
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background-color: #99862A;
+    a {
+        color: $primary;
+        font-family: 'Montserrat', sans-serif;    
+        font-size: 16px;
+        letter-spacing: 5%;
+        font-weight: 500;
+    }
+    &--long {
+        width: 538px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: $primary;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

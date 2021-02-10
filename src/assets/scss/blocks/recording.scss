@@ -1,0 +1,26 @@
+.recording {
+    position: relative;
+    background-color: #282828;
+    padding: 100px 0;
+}
+.recording__inner {
+    margin-top: -200px;
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    border-right: 1px solid $primary;
+    border-left: 1px solid $primary;
+    padding: 0 285px 90px;
+}
+.recording-icon {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 260px;
+        margin-left: -50px;
+        height: auto;
+        &:last-child {
+            margin-left: 700px;
+            height: 200px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.header {
+    padding-top: 30px;
+}
+.header__inner {
+    display: flex;
+    flex-direction: column;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    height: 46px;
+    align-items: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.nav__link {
+    color: #fff;
+    position: relative;
+    padding: 0 107px;
+    &::after {
+        display: block;
+        width: 100%;
+        /*какую высоту выставим, такого размера и будет бордер*/
+        height: 46px;
+        content: "";
+        border-right: 1px solid rgb(255, 255, 255);
+        position: absolute;
+        top: -13px;
+        left: 0;
+    }
+    &:last-child::after{
+        display: none;
+    }
+    
+}
