@@ -6,6 +6,9 @@
     margin-bottom: 40px;
     position: relative;
     text-align: center;
+    @include breakpoint($sm-bp) {
+        font-size: 26px;
+    }
     &::after {
         margin: 40px auto 0;
         display: block;
@@ -27,4 +30,7 @@
     line-height: 150%;
     margin-bottom: 50px;
     text-align: center;
+    @include breakpoint($sm-bp) {
+        font-size: 13px;
+    }
 }

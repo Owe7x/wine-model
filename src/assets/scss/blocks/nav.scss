@@ -11,6 +11,9 @@
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 13px;
+    @include breakpoint($sm-bp) {
+        font-size: 11px;
+    }
 }
 .header-nav {
     display: flex;
@@ -19,12 +22,22 @@
     align-items: center;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+    @include breakpoint($sm-bp) {
+        margin-top: 0px;
+    }
+
 }
 
 .nav__link {
     color: #fff;
     position: relative;
     padding: 0 107px;
+    @include breakpoint($l12-bp) {
+        padding: 0px 50px;
+    }
+    @include breakpoint($tablet-bp) {
+        padding: 0px 0px;
+    }
     &::after {
         display: block;
         width: 100%;
@@ -35,9 +48,19 @@
         position: absolute;
         top: -13px;
         left: 0;
+        @include breakpoint($l12-bp) {
+            left: 25px;
+        }
+        @include breakpoint($tablet-bp) {
+            left: 50px;
+        }
+        @include breakpoint($sm-bp) {
+            display: none;
+        }
     }
+    
     &:last-child::after{
         display: none;
     }
-    
+
 }

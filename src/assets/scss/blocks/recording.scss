@@ -9,7 +9,23 @@
     border-bottom: 1px solid $primary;
     border-right: 1px solid $primary;
     border-left: 1px solid $primary;
-    padding: 0 285px 90px;
+    padding: 0 295px 90px;
+    text-align: center;
+    @include breakpoint($large-bp) {
+        margin-top: 0px;
+    }
+    @include breakpoint($l12-bp) {
+        padding: 0 205px 90px;
+    }
+    @include breakpoint($tablet-bp) {
+        padding: 0 75px 90px;
+    }
+    @include breakpoint($m-bp) {
+        padding: 0 25px 90px;
+    }
+    @include breakpoint($sm-bp) {
+        padding: 0 30px 90px;
+    }
 }
 .recording-icon {
     display: flex;
@@ -19,8 +35,12 @@
         margin-left: -50px;
         height: auto;
         &:last-child {
-            margin-left: 700px;
+            margin-left: 720px;
             height: 200px;
         }
+        @include breakpoint($large-bp) {
+            display: none;
+        }
+
     }
 }

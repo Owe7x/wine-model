@@ -10,6 +10,9 @@
         letter-spacing: 5%;
         font-weight: 500;
     }
+    &:hover {
+        background-color: #b19922;
+    }
     &--long {
         width: 538px;
         background-color: transparent;
@@ -17,5 +20,18 @@
         color: $primary;
         font-size: 16px;
         font-weight: 500;
+        &:hover {
+            background-color: #fff;
+            color: $secondary;
+        }
+        @include breakpoint($m-bp) {
+            width: 448px;
+        }
+        @include breakpoint($sm-bp) {
+            width: 250px;
+        }
+    }
+    @include breakpoint($m-bp) {
+        margin-bottom: 10px;
     }
 }

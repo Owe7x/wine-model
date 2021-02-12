@@ -1,3 +1,4 @@
+@import "mixins";
 @import "vars";
 @import "vendor/reset";
 
@@ -26,13 +27,13 @@ a  {
 
     &:hover {
         text-decoration: underline;
+        color: rgba(255, 255, 255, 0.801)
     }
 }
 
 
 /* Blocks */
 @import "blocks/nav";
-@import "blocks/container";
 @import "blocks/header-main";
 @import "blocks/btn";
 @import "blocks/wine";
@@ -40,6 +41,6 @@ a  {
 @import "blocks/collection";
 @import "blocks/recording";
 @import "blocks/form";
-
+@import "blocks/footer";
 
 

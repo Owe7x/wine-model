@@ -11,11 +11,27 @@
     border-bottom: 1px solid #fff;
     margin-bottom: 40px;
     padding-bottom: 10px;
+    @include breakpoint($m-bp) {
+        width: 210px;
+    }
+    @include breakpoint($sm-bp) {
+        width: 250px;
+    }
+    
     &:first-child{
         margin-right: 28px;
+        @include breakpoint($sm-bp) {
+            margin-right: 0px;
+        }
     }
     &--long{
         width: 538px;
+        @include breakpoint($m-bp) {
+            width: 448px;
+        }
+        @include breakpoint($sm-bp) {
+            width: 250px;
+        }
     }
     &::placeholder {
         color: $primary;

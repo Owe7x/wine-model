@@ -9,6 +9,10 @@
 }
 .collection-info {
     padding-right: 97px;
+    @include breakpoint($l12-bp) {
+        padding-right: 0px;
+    }
+    
 }
 .info-subtitle {
     color: $secondary;
@@ -65,9 +69,33 @@
 }
 .collection-img {
     padding-left: 8px;
+    img {
+       width: 100%;
+    }
+    @include breakpoint($l12-bp) {
+        padding-left: 0px;
+    }
+    @include breakpoint($m-bp) {
+        display: none;
+    }
 }
 .min-img {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    @include breakpoint($tablet-bp) {
+        flex-direction: column;
+    }
+    img {
+        @include breakpoint($l12-bp) {
+            width: 230px;
+        }
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
 }

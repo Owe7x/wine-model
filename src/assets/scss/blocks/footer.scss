@@ -1,0 +1,96 @@
+.footer {
+    background-color: #998431;
+    padding: 50px 0px;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    padding: 20px 95px;
+    @include breakpoint($l12-bp) {
+        padding: 20px 50px;
+    }
+    @include breakpoint($tablet-bp) {
+        padding: 20px 0px;
+    }
+    @include breakpoint($m-bp) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.footer__link {
+    color: $primary ;
+    @include breakpoint($m-bp) {
+        margin-bottom: 10px;
+    }
+    &--contact {
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 58px;
+        @include breakpoint($l12-bp) {
+            padding: 0 20px;
+        }
+        @include breakpoint($tablet-bp) {
+            padding: 0 0;
+        }
+        @include breakpoint($m-bp) {
+            padding: 15px 0;
+            border-bottom: 1px solid $primary;
+            margin-bottom: 0;
+        }
+        &::after {
+            display: block;
+            width: 100%;
+            /*какую высоту выставим, такого размера и будет бордер*/
+            height: 59px;
+            content: "";
+            border-right: 1px solid rgb(255, 255, 255);
+            position: absolute;
+            top: -20px;
+            left: 25px;
+            @include breakpoint($tablet-bp) {
+                left: 20px;
+            }
+            @include breakpoint($m-bp) {
+                border-right: 0;
+                left: 0;
+                top: 0;
+            }
+        }
+        &:last-child::after{
+            display: none;
+        }
+    }
+    &--icon {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+    border-bottom: 1px solid $primary;
+    @include breakpoint($l12-bp) {
+        padding: 20px 10px;
+    }
+    @include breakpoint($m-bp) {
+        flex-direction: column;
+        text-align: center;
+    }
+    @include breakpoint($m-bp) {
+        padding: 0 0;
+        border-bottom: 0;
+    }
+}
+.footer__icon {
+    margin-right: 38px;
+    &:last-child {
+        margin-right: 0px   ;
+    }
+    @include breakpoint($tablet-bp) {
+        margin-right: 28px;
+    }
+}

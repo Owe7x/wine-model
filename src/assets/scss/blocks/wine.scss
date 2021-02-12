@@ -6,7 +6,12 @@
     border: 1px solid #fff;
     padding: 60px 186px;
     text-align: center;
-
+    @include breakpoint($l12-bp) {
+        padding: 60px 136px;
+    }
+    @include breakpoint($tablet-bp) {
+        padding: 60px 60px;
+    }
 
 }
 

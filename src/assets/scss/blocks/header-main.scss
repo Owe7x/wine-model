@@ -3,6 +3,10 @@
     width: 415px;
     justify-content: space-between;
     margin-top: 700px;
+    @include breakpoint($m-bp) {
+        flex-direction: column;
+        padding: 0 15px;
+    }
 }
 .header-main {
     display: flex;
@@ -11,8 +15,12 @@
     margin-top: -117px;
     width: 100%;
     height: auto;
-    background-size: 100%;
-    background-position: center;
     background: url(/assets/images/header_bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include breakpoint($m-bp) {
+        margin-bottom: 10px;
+    }
 
 }
